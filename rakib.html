@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rakibul Islam — Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #000;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    header h2 {
+      font-size: 22px;
+      margin: 0;
+      cursor: pointer;
+      user-select: none;
+    }
+    header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+      display: inline-block;
+    }
+    /* Green box background with text color on hover and focus */
+    nav a:hover,
+    nav a:focus {
+      background-color: #4caf50;
+      color: white;
+      outline: none;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 36px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin: 10px 0 20px;
+    }
+    .btn {
+      display: inline-block;
+      background: #00bcd4;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .btn:hover,
+    .btn:focus {
+      background-color: #0097a7;
+      outline: none;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .contact input, .contact textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+      font-size: 16px;
+    }
+    .contact button {
+      padding: 10px 20px;
+      background: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact button:hover,
+    .contact button:focus {
+      background-color: #0097a7;
+      outline: none;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 10px 10px;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #00bcd4;
+    }
+    @media(max-width: 600px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="profile.png" alt="Rakibul's Photo" />
+      <h2 tabindex="0">Rakibul Islam</h2>
+    </div>
+    <nav>
+      <a href="#home" tabindex="0">Home</a>
+      <a href="#about" tabindex="0">About</a>
+      <a href="#services" tabindex="0">Services</a>
+      <a href="#portfolio" tabindex="0">Portfolio</a>
+      <a href="#testimonials" tabindex="0">Testimonials</a>
+      <a href="#contact" tabindex="0">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section class="hero" id="home">
+    <h1>Hi, I’m Rakibul Islam</h1>
+    <p>Digital Marketing Enthusiast & Web Developer</p>
+    <p>I help brands grow online with smart marketing strategies and stunning websites.</p>
+    <a href="#contact" class="btn">👉 Hire Me</a>
+
+    <img src="hero-image.jpg" alt="Digital Workspace" style="width:100%; max-width:600px; margin:20px auto; display:block;">
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Who am I?</h2>
+    <p>I’m Rakibul Islam, a passionate learner currently building my career in the digital world. I specialize in:</p>
+    <ul>
+      <li>@ Search Engine Optimization (SEO)</li>
+      <li>@ Facebook & Google Ads</li>
+      <li>@ Content Marketing</li>
+      <li>@ Website Audit & Technical Analysis</li>
+      <li>@ Social Media Management</li>
+      <li>@ Web Development (HTML, CSS, JS)</li>
+      <li>@ Email Marketing & Automation</li>
+    </ul>
+    <p>🚀 I believe in smart strategies, creative ideas, and continuous learning. My goal is to help brands grow online with real, measurable results.</p>
+
+    <img src="about-skills.jpg" alt="About Skills" style="width:100%; max-width:600px; margin:20px auto; display:block;">
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>My Services</h2>
+    <ul>
+      <li>🔍 SEO Optimization</li>
+      <li>📢 Facebook & Google Ads</li>
+      <li>✍️ Content Marketing</li>
+      <li>🧪 Website Audit</li>
+      <li>📱 Social Media Management</li>
+      <li>💻 Web Development</li>
+      <li>📨 Email Marketing</li>
+    </ul>
+
+    <img src="services-banner.jpg" alt="Service Highlights" style="width:100%; max-width:600px; margin:20px auto; display:block;">
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>🚧 Coming Soon… I’m currently working on live client projects and demo campaigns.</p>
+
+    <img src="portfolio1.jpg" alt="Portfolio Preview" style="width:100%; max-width:600px; margin:20px auto; display:block;">
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <p>"Rakibul is an incredibly fast learner with a strong grip on digital strategy. I’d definitely recommend working with him!" — A Mentor</p>
+    <p>“He has a great attitude and delivers quality. Always ready to learn and help.” — Senior Marketer</p>
+
+    <img src="testimonial.jpg" alt="Client Reviews" style="width:100%; max-width:600px; margin:20px auto; display:block;">
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Let’s Work Together!</h2>
+    <p>Have a project in mind or just want to say hello?</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">📩 Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/ra.k.ib.531542" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/rakibul-islam-rumman/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://wa.me/8801312232668" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.pinterest.com/cozynestvibes2025/" target="_blank"><i class="fab fa-pinterest"></i></a>
+      <a href="https://www.instagram.com/rakibul4628islam/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>© 2025 Rakibul Islam | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Scroll to top on clicking logo name
+    document.querySelector('header h2').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
